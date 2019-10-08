@@ -57,7 +57,15 @@ public class CohortTest {
     }
 
     @Test
+    public void testIfListOfStudentsIsReturned(){
+        assertEquals("annette", cohortWithOne.getStudents().get(0).getName());
+        //reference the instance, the element, the list, then the property
+
+    }
+
+    @Test
     public void ifCohortGradeAverageCorrect(){
+        assertNotEquals(90, emptyCohort.getCohortAverage(), 0);
         assertEquals(75, cohortWithOne.getCohortAverage(), 0);
         assertEquals(78,cohortWithMany.getCohortAverage(),1);
 
