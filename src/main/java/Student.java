@@ -59,11 +59,18 @@ public  class Student {
         double total = 0;
         for (int i = 0; i < this.grades.size(); i++)
             total += this.grades.get(i);
-            return total / this.grades.size();
+        return total / this.grades.size();
 
     }
 
 
 }
+
+
+
+
+
+
+
 
 
